@@ -1,0 +1,14 @@
+version: '2.2'
+
+services:
+  emqx:
+    image: emqx/emqx:5.3.2
+    ports:
+      - 1883:1883
+      - 8081:8081
+      - 8083:8083
+      - 8883:8883
+      - 8084:8084
+      - 18083:18083
+    environment:
+      - TZ=Asia/Shanghai
